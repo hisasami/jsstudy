@@ -16,7 +16,7 @@ let sum = function(a, b) {
     return a+b;
 }
 
-module.export;
+module.exports = { sum };
 
 
 let nums1 = [1,2,3,0,0,0]

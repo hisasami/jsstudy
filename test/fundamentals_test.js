@@ -1,12 +1,11 @@
-// import { sum } from "../src/fundamentals"
+// arrow functions are discouraged
 
-const sum = require('../src/fundamentals');
-describe('sum', () => {
-    it("1+2=3", () => {
+let sum = require('../src/fundamentals').sum;
+describe('fundamentals.js', function(){
+    it('1+2=3', function(){
         assert.equal(sum(1,2), 3);
     })
 })
-
 let assert = require('assert');
 describe('Array', function() {
     describe('#indexOf()', function() {

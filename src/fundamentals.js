@@ -1,10 +1,7 @@
 function showMessage(text){
     text = text || 'empty'; // return truthy value
-    console.log(text);
+    return text;
 }
-
-let a = false;
-showMessage(a);
 
 let age = 10;
 let welcome = (age < 18) ?
@@ -16,7 +13,7 @@ let sum = function(a, b) {
     return a+b;
 }
 
-module.exports = { sum };
+module.exports = { sum, showMessage };
 
 
 let nums1 = [1,2,3,0,0,0]
